@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+            var a= 9
+            var b;
+
+            for (var x=1; x<=10 ;x++)
+            {
+                b = a * x;
+
+                document.write(" " +a+ "x" +x+ "=", + b , "<br/>");
+                if (b == 45)
+                {
+                    continue;
+                }
+            }
+            var even= 2;
+            while(even<100)
+            {
+                document.write("<br/>"+ even)
+                even=2+even;
+            }
+            function sum(limit)
+            {
+                for(let x = 0; x <= limit; x++)
+                {
+                    if(x % 3 == 0 && x % 5 == 0)
+                    {
+                        document.write(x)
+                    }
+                }
+            }
+            sum(150)
+        </script>
+   
+
+   </scrip> 
+</body>
+</html>

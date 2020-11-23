@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.write("<h2>Displaying 1-10 using While loops</h2>");
+      let i = 1;
+      while (i <= 10) {
+        if (i == 5) {
+          i++;
+          continue;
+        }
+        document.write(i + "</br>");
+        i++;
+      }
+      let t = 11;
+      do {
+        document.write(t + "</br>");
+        t++;
+      } while (t <= 10);
+      soccer = ["team", "ants", "bombs", "school"];
+      /*{
+        team1: "team",
+        team2: "ants",
+        team3: "bombs",
+        team4: "school",
+      };*/
+
+      for (let coaches of soccer)
+        for (let x in soccer) {
+          if (soccer[x] == "bombs") {
+            continue;
+          }
+          document.write(soccer[x] + "<br>" /*, ": ", soccer[coaches] +*/);
+        }
+    </script>
+  </body>
+</html>
